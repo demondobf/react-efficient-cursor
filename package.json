@@ -1,0 +1,35 @@
+{
+  "name": "react-efficient-cursor",
+  "description": "Efficient custom cursor for React Apps",
+  "version": "1.0.0",
+  "keywords": [
+    "react cursor",
+    "custom cursor"
+  ],
+  "author": "demondobf",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "demondobf/react-efficient-cursor"
+  },
+  "bugs": {
+    "url": "https://github.com/demondobf/react-efficient-cursor/issues"
+  },
+  "homepage": "https://github.com/demondobf/react-efficient-cursor",
+  "main": "lib/EfficientCursor.js",
+  "types": "lib/EfficientCursor.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.2",
+    "react": "^17.0.1",
+    "typescript": "^4.2.2"
+  }
+}
