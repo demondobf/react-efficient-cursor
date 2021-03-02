@@ -3,7 +3,7 @@
     "target": "ES6",
     "module": "CommonJS",
     "jsx": "react-jsx",
-    "lib": ["ESNext"],
+    "lib": ["DOM", "ESNext"],
     "declaration": true,
     "sourceMap": true,
     "outDir": "./lib",
