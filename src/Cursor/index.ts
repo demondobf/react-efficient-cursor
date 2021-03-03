@@ -1,34 +1,34 @@
-const calculateLerp = (a: number, b: number, n: number) => (1 - n) * a + n * b;
+import { calculateDifference, calculatePosition } from './utils';
 
 class Cursor {
   private animationFrameID: number | null;
-  private target: Matrix;
-  private cursor: Matrix;
+  private cursorDestination: Matrix;
+  private cursorGhost: Matrix;
   private speed: number;
 
   constructor(private elementRef: HTMLDivElement, speed: number) {
     this.animationFrameID = null;
-    this.target = { x: 0.5, y: 0.5 };
-    this.cursor = { x: 0.5, y: 0.5 };
+    this.cursorDestination = { x: 0.5, y: 0.5 };
+    this.cursorGhost = { x: 0.5, y: 0.5 };
     this.speed = speed;
     this.init();
   }
 
   private handleMouseMove = (e: MouseEvent) => {
-    this.target.x = e.clientX / window.innerWidth;
-    this.target.y = e.clientY / window.innerHeight;
+    this.cursorDestination.x = e.clientX / window.innerWidth;
+    this.cursorDestination.y = e.clientY / window.innerHeight;
 
     if (!this.animationFrameID) this.animationFrameID = requestAnimationFrame(this.render);
   };
 
   private render = () => {
-    const { target, cursor, speed, elementRef } = this;
+    const { cursorDestination, cursorGhost, speed, elementRef } = this;
 
-    cursor.x = calculateLerp(cursor.x, target.x, speed);
-    cursor.y = calculateLerp(cursor.y, target.y, speed);
+    cursorGhost.x = calculatePosition(cursorGhost.x, cursorDestination.x, speed);
+    cursorGhost.y = calculatePosition(cursorGhost.y, cursorDestination.y, speed);
 
-    elementRef.style.setProperty('--cursor-x', cursor.x.toString());
-    elementRef.style.setProperty('--cursor-y', cursor.y.toString());
+    elementRef.style.setProperty('--cursor-x', cursorGhost.x.toString());
+    elementRef.style.setProperty('--cursor-y', cursorGhost.y.toString());
 
     if (this.isCursorIdle()) {
       this.handleAnimationFrameCleanup();
@@ -44,10 +44,8 @@ class Cursor {
   }
 
   private isCursorIdle(): boolean {
-    const { target, cursor } = this;
-    const delta = Math.sqrt(Math.pow(target.x - cursor.x, 2) + Math.pow(target.y - cursor.y, 2));
-
-    return delta < 0.001;
+    const cursorTargetDifference = calculateDifference(this.cursorGhost, this.cursorDestination);
+    return cursorTargetDifference < 0.001;
   }
 
   private init() {
