@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div>
       <EfficientCursor>
-        // Your component
+        <div>Your component</div>
       </EfficientCursor>
     </div>
   );
