@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/demondobf/react-efficient-cursor/static/css/main.0dc153b9.chunk.css",
+    "main.js": "/demondobf/react-efficient-cursor/static/js/main.d4453c90.chunk.js",
+    "main.js.map": "/demondobf/react-efficient-cursor/static/js/main.d4453c90.chunk.js.map",
+    "runtime-main.js": "/demondobf/react-efficient-cursor/static/js/runtime-main.77513031.js",
+    "runtime-main.js.map": "/demondobf/react-efficient-cursor/static/js/runtime-main.77513031.js.map",
+    "static/css/2.ca4db983.chunk.css": "/demondobf/react-efficient-cursor/static/css/2.ca4db983.chunk.css",
+    "static/js/2.40fed67b.chunk.js": "/demondobf/react-efficient-cursor/static/js/2.40fed67b.chunk.js",
+    "static/js/2.40fed67b.chunk.js.map": "/demondobf/react-efficient-cursor/static/js/2.40fed67b.chunk.js.map",
+    "index.html": "/demondobf/react-efficient-cursor/index.html",
+    "static/css/2.ca4db983.chunk.css.map": "/demondobf/react-efficient-cursor/static/css/2.ca4db983.chunk.css.map",
+    "static/css/main.0dc153b9.chunk.css.map": "/demondobf/react-efficient-cursor/static/css/main.0dc153b9.chunk.css.map",
+    "static/js/2.40fed67b.chunk.js.LICENSE.txt": "/demondobf/react-efficient-cursor/static/js/2.40fed67b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.77513031.js",
+    "static/css/2.ca4db983.chunk.css",
+    "static/js/2.40fed67b.chunk.js",
+    "static/css/main.0dc153b9.chunk.css",
+    "static/js/main.d4453c90.chunk.js"
+  ]
+}
