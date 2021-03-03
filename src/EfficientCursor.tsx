@@ -1,5 +1,5 @@
-import './EfficientCursor.css';
 import { useEffect, useRef } from 'react';
+import styles from './EfficientCursor.module.css';
 import Cursor from './Cursor';
 
 interface EfficientCursorProps {
@@ -22,7 +22,7 @@ const EfficientCursor = ({ children, speed = 0.1, ...props }: EfficientCursorPro
   useEffect(handleMount, []);
 
   return (
-    <div ref={cursorRef} className="cursor" {...props}>
+    <div ref={cursorRef} className={styles.container} {...props}>
       {children}
     </div>
   );

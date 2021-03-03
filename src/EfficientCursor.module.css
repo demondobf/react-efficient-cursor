@@ -1,4 +1,4 @@
-.cursor {
+.container {
   --offset-x: 100%;
   --offset-y: 100%;
 
@@ -14,7 +14,7 @@
   );
 }
 
-.cursor * {
+.container * {
   pointer-events: none;
   user-select: none;
 }
