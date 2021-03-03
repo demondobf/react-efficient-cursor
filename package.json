@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/demondobf/react-efficient-cursor/issues"
   },
-  "homepage": "https://github.com/demondobf/react-efficient-cursor",
+  "homepage": "https://demondobf.github.io/react-efficient-cursor/",
   "main": "lib/EfficientCursor.js",
   "types": "lib/EfficientCursor.d.ts",
   "files": [
