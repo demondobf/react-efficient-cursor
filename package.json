@@ -4,6 +4,18 @@
   "version": "2.0.0",
   "author": "demondo",
   "license": "MIT",
+  "keywords": [
+    "react cursor",
+    "custom cursor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demondobf/react-efficient-cursor"
+  },
+  "bugs": {
+    "url": "https://github.com/demondobf/react-efficient-cursor/issues"
+  },
+  "homepage": "https://react-efficient-cursor.vercel.app/",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",

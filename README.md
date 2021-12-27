@@ -5,7 +5,7 @@ Efficient custom cursor for React Apps
 [![Version](https://img.shields.io/npm/v/react-efficient-cursor.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/react-efficient-cursor)
 [![Build Size](https://img.shields.io/bundlephobia/minzip/react-efficient-cursor?label=bundle%20size&style=flat&colorA=000000&colorB=000000)](https://bundlephobia.com/result?p=react-efficient-cursor)
 [![Downloads](https://img.shields.io/npm/dt/react-efficient-cursor.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/react-efficient-cursor)
-[![Examples](https://img.shields.io/badge/-examples-000000)]()
+[![Examples](https://img.shields.io/badge/-examples-000000)](https://react-efficient-cursor.vercel.app/)
 
 ## Install
 
