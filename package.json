@@ -14,7 +14,7 @@
     "build": "rollup --config",
     "clean": "rimraf dist",
     "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook"
+    "storybook:build": "build-storybook -c .storybook -o public"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
