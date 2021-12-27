@@ -1,0 +1,20 @@
+.EfficientCursor_container {
+  --offset-x: 100%;
+  --offset-y: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  transform: translate(
+    calc(100vw * var(--cursor-x) - var(--offset-x) / 2),
+    calc(100vh * var(--cursor-y) - var(--offset-y) / 2)
+  );
+}
+
+.EfficientCursor_container,
+.EfficientCursor_container * {
+  box-sizing: border-box;
+  pointer-events: none;
+  user-select: none;
+}
