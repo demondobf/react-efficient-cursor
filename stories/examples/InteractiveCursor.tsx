@@ -1,10 +1,10 @@
 import * as React from 'react';
-import EfficientCursor from '../../src/components/EfficientCursor';
+import EfficientCursor, { EffictiveCursorProps } from '../../src/components/EfficientCursor';
 
 const INTERACTIVE_ELEMENTS = ['BUTTON', 'A'];
 const isOnInteractiveElement = (element: HTMLElement) => INTERACTIVE_ELEMENTS.includes(element.tagName);
 
-const InteractiveCursor = () => {
+const InteractiveCursor = (props: EffictiveCursorProps) => {
   const [hovering, setHovering] = React.useState(false);
   const [pressed, setPressed] = React.useState(false);
 
@@ -41,7 +41,7 @@ const InteractiveCursor = () => {
         </a>
       </div>
 
-      <EfficientCursor onMove={handleMouseEnter}>
+      <EfficientCursor onMove={handleMouseEnter} {...props}>
         <div style={styles}>{hovering ? '✨' : '🐶'}</div>
       </EfficientCursor>
     </>

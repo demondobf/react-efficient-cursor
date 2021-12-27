@@ -1,9 +1,8 @@
 import * as React from 'react';
-
-import EfficientCursor from '../../src/components/EfficientCursor';
+import EfficientCursor, { EffictiveCursorProps } from '../../src/components/EfficientCursor';
 import './styles.css';
 
-const CounterCursor = () => {
+const CounterCursor = (props: EffictiveCursorProps) => {
   const [count, setCount] = React.useState(0);
   const incrementCount = () => setCount((prev) => prev + 1);
 
@@ -14,7 +13,7 @@ const CounterCursor = () => {
   }, [count]);
 
   return (
-    <EfficientCursor className="my-cursor-styles">
+    <EfficientCursor className="my-cursor-styles" {...props}>
       <span>{count}</span>
     </EfficientCursor>
   );
