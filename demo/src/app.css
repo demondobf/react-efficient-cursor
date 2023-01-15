@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.my-cursor-styles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 100px;
+  min-height: 100px;
+  padding: 1rem;
+
+  border-radius: 50%;
+  border: 2px solid;
+
+  font-family: sans-serif;
+  font-weight: bold;
+}

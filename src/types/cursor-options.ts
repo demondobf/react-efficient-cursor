@@ -4,8 +4,3 @@ export interface CursorOptions {
   /** Optional action that is being invoked when moving the cursor. */
   onMove?: (e: MouseEvent) => void;
 }
-
-export interface CursorCoords {
-  x: number;
-  y: number;
-}
