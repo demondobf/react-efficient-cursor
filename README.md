@@ -17,10 +17,14 @@ npm i react-efficient-cursor
 yarn add react-efficient-cursor
 ```
 
+```bash
+pnpm add react-efficient-cursor
+```
+
 ## Usage
 
 ```tsx
-import EfficientCursor from 'react-efficient-cursor';
+import { EfficientCursor } from 'react-efficient-cursor';
 
 const MyCursor = () => {
   return (

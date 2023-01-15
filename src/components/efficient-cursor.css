@@ -1,4 +1,4 @@
-.EfficientCursor_container {
+.EfficientCursorContainer {
   --offset-x: 100%;
   --offset-y: 100%;
 
@@ -12,8 +12,8 @@
   );
 }
 
-.EfficientCursor_container,
-.EfficientCursor_container * {
+.EfficientCursorContainer,
+.EfficientCursorContainer * {
   box-sizing: border-box;
   pointer-events: none;
   user-select: none;

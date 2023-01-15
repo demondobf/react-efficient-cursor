@@ -1,1 +1,1 @@
-export { default } from './components/EfficientCursor';
+export { EfficientCursor } from './components/efficient-cursor';
